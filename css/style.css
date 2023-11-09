@@ -183,6 +183,7 @@ nav .fas {
   nav .fas {
     display: block;
     font-size: 25px;
+    cursor: pointer;
   }
   nav ul {
     background: var(--form);
@@ -222,6 +223,26 @@ nav .fas {
     font-size: 30px;
   }
   /* Home Page End */
+  /* About Page Start */
+
+  .sub-title {
+    font-size: 40px;
+  }
+  .about-col-1,
+  .about-col-2 {
+    flex-basis: 100%;
+  }
+  .about-col-1 {
+    margin-bottom: 30px;
+  }
+  .about-col-2 {
+    font-size: 14px;
+  }
+  .tab-links {
+    font-size: 16px;
+    margin-right: 20px;
+  }
+  /* About Page End */
 }
 
 /* Media Query Page End */
