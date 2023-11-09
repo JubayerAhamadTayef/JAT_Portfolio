@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Website Logo Link -->
+    <link rel="shortcut icon" type="x-icon" href="../assets/logos/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Website Title -->
+    <title>Jubayer Ahamad Tayef Portfolio!</title>
+    <!-- Css Link -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- Js Link -->
+    <script src="../js/script.js"></script>
+    <!-- Fontawesome Link -->
+    <script
+      src="https://kit.fontawesome.com/5e9175a701.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Header Section Start -->
+    <div id="header">
+      <div class="container">
+        <nav>
+          <a href="#header">
+            <img src="../assets/logos/logo.png" class="logo"
+          /></a>
+          <ul id="sideMenu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li>
+              <div class="dropdown">
+                <a href="#services"
+                  >Services <i class="fa-solid fa-caret-down"></i
+                ></a>
+                <div class="dropdown-content">
+                  <a href="">Web Design</a>
+                  <a href="">UI/UX Design</a>
+                  <a href="">App Design</a>
+                </div>
+              </div>
+            </li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openMenu()"></i>
+        </nav>
+      </div>
+    </div>
+    <!-- Header Section End -->
+    <!-- About Section Start -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="../assets/images/developerImage.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me!</h1>
+            <p>
+              Assalamualaikum, I'm Jubayer Ahamad Tayef. I'm a student. I am
+              studing Computer Technology in Moulvibazar Polytechnic Institute.
+              Also, I am learning app development using flutter! So, download My
+              CV for more information.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Designing Web/App interfaces</li>
+                <li><span>Web Development</span><br />Web App Development</li>
+                <li>
+                  <span>App Development</span><br />Building Android/iOS apps
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2020 - Current</span><br />UI/UX Design Training at DS
+                  Institute
+                </li>
+                <li>
+                  <span>2018 - 2020</span><br />Team lead at StartApp DSS.
+                </li>
+                <li>
+                  <span>2017 - 2018</span><br />UI/UX Design Executive at DSB.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2014</span><br />Passed PSC Exam from Kamalpur Primary
+                  School, Moulvibazar.
+                </li>
+                <li>
+                  <span>2017</span><br />Passed JSC Exam from Mirzapur High
+                  School, Hobiganj.
+                </li>
+                <li>
+                  <span>2020</span><br />Passed SSC Exam from Mirzapur High
+                  School, Hobiganj.
+                </li>
+                <li>
+                  <span>Current</span><br />Studing Computer Technology in
+                  Moulvibazar Polytechnic Institute.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About Section End -->
+  </body>
+</html>

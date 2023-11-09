@@ -7,9 +7,13 @@
 /* All Colors Here... */
 :root {
   --bg: #000000;
-  --txt: #b1ddf1;
+  --subBg: #ababab;
+  --subBg1: #ff004f;
+  --txt: #ffffff;
+  --txt1: #ffa500;
+  --txt2: #b1ddf1;
   --span: #fccb06;
-  --form: rgba(0, 0, 128, 0.493);
+  --form: rgba(0, 0, 128, 0.623);
 }
 
 body {
@@ -36,7 +40,7 @@ nav ul li {
   margin: 10px 20px;
 }
 nav ul li a {
-  color: var(--txt);
+  color: var(--txt2);
   text-decoration: none;
   font-size: 18px;
   position: relative;
@@ -45,7 +49,7 @@ nav ul li a::after {
   content: "";
   width: 0;
   height: 3px;
-  background: var(--span);
+  background: var(--txt1);
   position: absolute;
   left: 0;
   bottom: -6px;
@@ -71,7 +75,7 @@ nav .fas {
   z-index: 1;
 }
 .dropdown-content a {
-  color: var(--txt);
+  color: var(--txt2);
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -102,9 +106,76 @@ nav .fas {
   /* margin-top: 20px; */
 }
 .home-text h1 span {
-  color: var(--span);
+  color: var(--txt1);
 }
 /* Home Page End */
+/* About Page Start */
+
+#about {
+  padding: 80px 0;
+  color: var(-);
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.about-col-1 {
+  flex-basis: 35%;
+}
+.about-col-1 img {
+  width: 100%;
+  border-radius: 15px;
+  background: var(--form);
+}
+.about-col-2 {
+  flex-basis: 60%;
+}
+.sub-title {
+  font-size: 60px;
+  font-weight: 600;
+  color: var(--txt1);
+}
+.tab-titles {
+  display: flex;
+  margin: 20px 0 40px;
+}
+.tab-links {
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  color: var(--txt2);
+}
+.tab-links::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: var(--txt1);
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}
+.tab-links.active-link::after {
+  width: 50%;
+}
+.tab-contents ul li {
+  list-style: none;
+  margin: 10px 0;
+}
+.tab-contents ul li span {
+  color: var(--txt1);
+  font-size: 14px;
+}
+.tab-contents {
+  display: none;
+}
+.tab-contents.active-tab {
+  display: block;
+}
+/* About Page End */
 
 /* Media Query Page Start */
 @media only screen and (max-width: 600px) {
