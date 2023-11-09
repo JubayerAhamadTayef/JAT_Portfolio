@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <!-- Website Logo Link -->
-    <link rel="shortcut icon" type="x-icon" href="./assets/logos/logo.png" />
+    <link rel="shortcut icon" type="x-icon" href="../assets/logos/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Website Title -->
     <title>Jubayer Ahamad Tayef Portfolio!</title>
     <!-- Css Link -->
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
 
     <!-- Fontawesome Link -->
     <script
@@ -22,22 +22,20 @@
       <div class="container">
         <nav>
           <a href="#header">
-            <img src="./assets/logos/logo.png" class="logo"
+            <img src="../assets/logos/logo.png" class="logo"
           /></a>
           <ul id="sideMenu">
-            <li><a href="#header">Home</a></li>
-            <li><a href="./pages/about-page.html">About</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./about-page.html">About</a></li>
             <li>
               <div class="dropdown">
-                <a href="./pages/services-page.html"
+                <a href="#services"
                   >Services <i class="fa-solid fa-caret-down"></i
                 ></a>
                 <div class="dropdown-content">
-                  <a href="./pages/services-page.html#webDesign">Web Design</a>
-                  <a href="./pages/services-page.html#ui/uxDesign"
-                    >UI/UX Design</a
-                  >
-                  <a href="./pages/services-page.html#appDesign">App Design</a>
+                  <a href="#webDesign">Web Design</a>
+                  <a href="#ui/uxDesign">UI/UX Design</a>
+                  <a href="#appDesign">App Design</a>
                 </div>
               </div>
             </li>
@@ -50,19 +48,35 @@
       </div>
     </div>
     <!-- Header Section End -->
-    <!-- Home Page Start -->
-    <div id="home">
+    <!-- Services Page Start -->
+    <div id="services">
       <div class="container">
-        <div class="home-text">
-          <p>UI/UX Designer</p>
-          <h1>
-            Hi, I'm <span>Jubayer Ahamad Tayef!</span> <br />
-            From Bangladesh!
-          </h1>
+        <div>
+          <h1 class="sub-title">My Services</h1>
+          <div class="services-list">
+            <div id="webDesign">
+              <i class="fas fa-code"></i>
+              <h2>Web Design</h2>
+              <p>I am provide, Best Web Design Service at fair price!</p>
+              <a href="#">learn more...</a>
+            </div>
+            <div id="ui/uxDesign">
+              <i class="fas fa-crop-alt"></i>
+              <h2>UI/UX Design</h2>
+              <p>I am provide, Best UI/UX Design Service at fair price!</p>
+              <a href="#">learn more...</a>
+            </div>
+            <div id="appDesign">
+              <i class="fab fa-app-store"></i>
+              <h2>App Design</h2>
+              <p>I am provide, Best App Design Service at fair price!</p>
+              <a href="#">learn more...</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <!-- Home Page End -->
+    <!-- Services Page End -->
     <!-- Footer Section Start -->
     <div class="footer">
       <p>

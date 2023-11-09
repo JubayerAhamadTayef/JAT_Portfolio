@@ -7,13 +7,15 @@
 /* All Colors Here... */
 :root {
   --bg: #000000;
-  --subBg: #ababab;
+  --subBg3: gray;
   --subBg1: #ff004f;
+  --subBg2: #ababab;
   --txt: #ffffff;
   --txt1: #ffa500;
   --txt2: #b1ddf1;
   --span: #fccb06;
   --form: rgba(0, 0, 128, 0.623);
+  --subBg: rgba(119, 0, 255, 0.411);
 }
 
 body {
@@ -176,6 +178,67 @@ nav .fas {
   display: block;
 }
 /* About Page End */
+/* Services Page Start */
+#services {
+  padding: 30px 0;
+}
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+.services-list div {
+  background: var(--form);
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 300;
+  border-radius: 10px;
+  transition: background 0.5s transform 0.5s;
+}
+.services-list div i {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+.services-list div h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  color: var(--txt1);
+}
+.services-list div a {
+  text-decoration: none;
+  color: var(--txt2);
+  font-size: 12px;
+  margin-top: 20px;
+  display: inline-block;
+}
+.services-list div a:hover {
+  color: var(--txt1);
+  font-weight: 700;
+}
+.services-list div:hover {
+  background: var(--subBg);
+  transform: translateY(-10px);
+}
+
+/* Services Page End */
+/* Footer Section Start */
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 25px 0;
+  background: #262626;
+  font-weight: 300;
+  margin-top: 20px;
+}
+.footer i {
+  color: var(--subBg1);
+}
+.footer span {
+  color: var(--txt1);
+}
+/* Footer Section End */
 
 /* Media Query Page Start */
 @media only screen and (max-width: 600px) {
@@ -243,6 +306,11 @@ nav .fas {
     margin-right: 20px;
   }
   /* About Page End */
+  /* Footer Section Start */
+  .footer {
+    font-size: 14px;
+  }
+  /* Footer Section End */
 }
 
 /* Media Query Page End */
