@@ -7,9 +7,9 @@
 /* All Colors Here... */
 :root {
   --bg: #000000;
-  --txt: #ffffff;
+  --txt: #b1ddf1;
   --span: #fccb06;
-  --form: #b1ddf1;
+  --form: rgba(0, 0, 128, 0.493);
 }
 
 body {
@@ -54,9 +54,59 @@ nav ul li a::after {
 nav ul li a:hover::after {
   width: 100%;
 }
-/* Header Section End */
 
-/* Media Query Section Start */
+nav .fas {
+  display: none;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--form);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: var(--txt);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: var(--bg);
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* Header Section End */
+/* Home Page Start */
+
+#home {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../assets/images/bg_large.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.home-text {
+  margin-top: 20%;
+  font-size: 30px;
+}
+.home-text h1 {
+  font-size: 60px;
+  /* margin-top: 20px; */
+}
+.home-text h1 span {
+  color: var(--span);
+}
+/* Home Page End */
+
+/* Media Query Page Start */
 @media only screen and (max-width: 600px) {
   /* Header Section Start */
   nav .fas {
@@ -88,6 +138,19 @@ nav ul li a:hover::after {
     width: 100px;
   }
   /* Header Section End */
+  /* Home Page Start */
+  #home {
+    background-image: url(../assets/images/bg_mobile.png);
+  }
+
+  .home-text {
+    margin-top: 70%;
+    font-size: 16px;
+  }
+  .home-text h1 {
+    font-size: 30px;
+  }
+  /* Home Page End */
 }
 
-/* Media Query Section End */
+/* Media Query Page End */
