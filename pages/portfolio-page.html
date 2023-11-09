@@ -29,17 +29,17 @@
             <li><a href="./about-page.html">About</a></li>
             <li>
               <div class="dropdown">
-                <a href="#services"
+                <a href="./services-page.html"
                   >Services <i class="fa-solid fa-caret-down"></i
                 ></a>
                 <div class="dropdown-content">
-                  <a href="#webDesign">Web Design</a>
-                  <a href="#ui/uxDesign">UI/UX Design</a>
-                  <a href="#appDesign">App Design</a>
+                  <a href="./services-page.html#webDesign">Web Design</a>
+                  <a href="./services-page.html#ui/uxDesign">UI/UX Design</a>
+                  <a href="./services-page.html#appDesign">App Design</a>
                 </div>
               </div>
             </li>
-            <li><a href="./portfolio-page.html">Portfolio</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
             <i class="fas fa-times" onclick="closeMenu()"></i>
           </ul>
@@ -48,35 +48,49 @@
       </div>
     </div>
     <!-- Header Section End -->
-    <!-- Services Page Start -->
-    <div id="services">
-      <div class="container">
-        <div>
-          <h1 class="sub-title">My Services</h1>
-          <div class="services-list">
-            <div id="webDesign">
-              <i class="fas fa-code"></i>
-              <h2>Web Design</h2>
-              <p>I am provide, Best Web Design Service at fair price!</p>
-              <a href="#">learn more...</a>
+    <!-- Portfolio Section Start -->
+    <div id="portfolio">
+        <div class="container">
+          <h1 class="sub-title">My Work</h1>
+          <div class="work-list">
+            <div class="work">
+              <img src="../assets/images/online_shoppin_app.png" />
+              <div class="layer">
+                <h3>Online Shopping App.</h3>
+                <p>
+                  The app connects you to the talented people around the world.
+                  Download it from play store.
+                </p>
+                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+              </div>
             </div>
-            <div id="ui/uxDesign">
-              <i class="fas fa-crop-alt"></i>
-              <h2>UI/UX Design</h2>
-              <p>I am provide, Best UI/UX Design Service at fair price!</p>
-              <a href="#">learn more...</a>
+            <div class="work">
+              <img src="../assets/images/music_app.png" />
+              <div class="layer">
+                <h3>Music App.</h3>
+                <p>
+                  The app connects you to the talented people around the world.
+                  Download it from play store.
+                </p>
+                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+              </div>
             </div>
-            <div id="appDesign">
-              <i class="fab fa-app-store"></i>
-              <h2>App Design</h2>
-              <p>I am provide, Best App Design Service at fair price!</p>
-              <a href="#">learn more...</a>
+            <div class="work">
+              <img src="../assets/images/social_media_app.png" />
+              <div class="layer">
+                <h3>Social Media App.</h3>
+                <p>
+                  The app connects you to the talented people around the world.
+                  Download it from play store.
+                </p>
+                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+              </div>
             </div>
           </div>
+          <a href="#" class="btn">See More...</a>
         </div>
       </div>
-    </div>
-    <!-- Services Page End -->
+    <!-- Portfolio Section End -->
     <!-- Footer Section Start -->
     <div class="footer">
       <p>
@@ -85,7 +99,6 @@
       </p>
     </div>
     <!-- Footer Section End -->
-    <!-- JS Section Start -->
     <script>
       var sideMenu = document.getElementById("sideMenu");
       function openMenu() {
@@ -95,6 +108,5 @@
         sideMenu.style.right = "-200px";
       }
     </script>
-    <!-- JS Section End -->
   </body>
 </html>
