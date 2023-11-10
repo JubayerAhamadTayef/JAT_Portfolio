@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Website Logo Link -->
+    <link rel="shortcut icon" type="x-icon" href="../assets/logos/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Website Title -->
+    <title>Jubayer Ahamad Tayef Portfolio!</title>
+    <!-- Css Link -->
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- Fontawesome Link -->
+    <script
+      src="https://kit.fontawesome.com/5e9175a701.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Header Section Start -->
+    <div id="header">
+      <div class="container">
+        <nav>
+          <a href="#header">
+            <img src="../assets/logos/logo.png" class="logo"
+          /></a>
+          <ul id="sideMenu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./about-page.html">About</a></li>
+            <li>
+              <div class="dropdown">
+                <a href="./services-page.html"
+                  >Services <i class="fa-solid fa-caret-down"></i
+                ></a>
+                <div class="dropdown-content">
+                  <a href="./services-page.html#webDesign">Web Design</a>
+                  <a href="./services-page.html#ui/uxDesign">UI/UX Design</a>
+                  <a href="./services-page.html#appDesign">App Design</a>
+                </div>
+              </div>
+            </li>
+            <li><a href="./portfolio-page.html">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openMenu()"></i>
+        </nav>
+      </div>
+    </div>
+    <!-- Header Section End -->
+    <!-- Contact Page Start -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <a  href=mailto:"myworkstation81@gmail.com">
+              <i class="fa-solid fa-envelope"></i>myworkstation81@gmail.com
+            </a><br>
+            <a href="tel:+8801897484760"><i class="fa-solid fa-phone"></i>+8801891484760</a>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/muhammadjubayer.ahmedtayef"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="https://m.me/muhammadjubayer.ahmedtayef"
+                ><i class="fa-brands fa-facebook-messenger"></i
+              ></a>
+              <a href="https://wa.me/qr/ITVOIOKJVOBSN1 "
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+              <a href="https://bd.linkedin.com/in/jubayer-ahmed-tayef-7009b3287"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/JubayerAhamadTayef"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+            <a href="./assets/pdf/MyCV.pdf" download class="btn btn1"
+              >Download My CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input
+                type="text"
+                name="Name"
+                placeholder="Please, Enter Your Name Here..."
+                required
+              />
+              <input
+                type="text"
+                name="Email"
+                placeholder="Please, Enter Your Email Here..."
+                required
+              />
+              <textarea
+                type="text"
+                name="Message"
+                rows="6"
+                placeholder="Please, Enter Your Name Here..."
+                required
+              ></textarea>
+              <button type="submit" class="btn btn2">Send</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Contact Page End -->
+
+    <!-- Footer Section Start -->
+    <div class="footer">
+      <p>
+        Copyright © <span>JAT</span> Made by
+        <span>Jubayer Ahamad Tayef (579462)</span>
+      </p>
+    </div>
+    <!-- Footer Section End -->
+    <!-- JS Section Start -->
+    <script>
+      var sideMenu = document.getElementById("sideMenu");
+      function openMenu() {
+        sideMenu.style.right = "0";
+      }
+      function closeMenu() {
+        sideMenu.style.right = "-200px";
+      }
+    </script>
+    <!-- JS Section End -->
+    <!-- Contact Form JS Section Start -->
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbxXtMyQW7t9f_2SUbz5njJrLJrBF9wGZs8tRZdRsB-Tn0V6SAPEMMGhGm6klHEgvHeSpQ/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+    <!-- Contact Form JS Section End -->
+  </body>
+</html>

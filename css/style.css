@@ -7,6 +7,7 @@
 /* All Colors Here... */
 :root {
   --bg: #000000;
+  --ftBg: rgba(82, 57, 129, 0.616);
   --subBg3: gray;
   --subBg1: #ff004f;
   --subBg2: #ababab;
@@ -14,6 +15,7 @@
   --txt1: #ffa500;
   --txt2: #b1ddf1;
   --span: #fccb06;
+  --msg: #61b752;
   --form: rgba(0, 0, 128, 0.623);
   --subBg: rgba(119, 0, 255, 0.411);
 }
@@ -34,7 +36,46 @@ nav {
   flex-wrap: wrap;
 }
 .logo {
-  width: 150px;
+  width: 100px;
+}
+/* The Modal (background) */
+.modal {
+  padding: 10px 10%;
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: var(--form);
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 100px;
+  border: 1px solid var(--txt1);
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: var(--txt2);
+  float: inline-end;
+  font-size: 28px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.close:hover,
+.close:focus {
+  color: var(--txt1);
+  text-decoration: none;
+  cursor: pointer;
 }
 nav ul li {
   display: inline-block;
@@ -134,7 +175,7 @@ nav .fas {
   flex-basis: 60%;
 }
 .sub-title {
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 600;
   color: var(--txt1);
 }
@@ -143,7 +184,7 @@ nav .fas {
   margin: 20px 0 40px;
 }
 .tab-links {
-  margin-right: 50px;
+  margin-right: 60px;
   font-size: 18px;
   font-weight: 500;
   cursor: pointer;
@@ -303,6 +344,92 @@ nav .fas {
   font-weight: bold;
 }
 /* Portfolio Page End */
+
+/* Contact Section Start */
+.contact-left {
+  flex-basis: 35%;
+}
+.contact-right {
+  flex-basis: 60%;
+}
+.contact-left a {
+  margin-top: 30px;
+  text-decoration: none;
+  color: var(--txt2);
+  font-size: 18px;
+}
+.contact-left a i {
+  color: var(--txt1);
+  margin-right: 15px;
+  font-size: 25px;
+}
+.contact-left a i.fa-envelope {
+  font-size: 18px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+.contact-left a i.fa-phone {
+  font-size: 18px;
+}
+.social-icons {
+  margin-top: 30px;
+}
+.social-icons a {
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 15px;
+  color: var(--subBg2);
+  display: inline-block;
+  transition: transform 0.5s;
+}
+.social-icons a:hover {
+  color: var(--txt1);
+  transform: translateY(-5px);
+}
+/* .btn.btn1 {
+  display: inline-block;
+  background: #ff004f;
+  font-weight: normal;
+  color: #ffffff;
+  border: #ff004f;
+}
+.btn.btn1:hover {
+  color: #000000;
+  background: #ffa500;
+} */
+.btn.btn2 {
+  background: #000000;
+}
+.btn.btn2:hover {
+  background: var(--form);
+}
+.contact-right form {
+  width: 100%;
+}
+form input,
+form textarea {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: var(--ftBg);
+  padding: 15px;
+  margin: 15px 0;
+  color: var(--txt);
+  font-size: 18px;
+  border-radius: 6px;
+}
+form .btn2 {
+  padding: 14px 60px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+#msg {
+  color: var(--msg);
+  margin-top: -40px;
+  display: block;
+}
+/* Contact Section End */
 /* Footer Section Start */
 .footer {
   width: 100%;
@@ -346,7 +473,7 @@ nav .fas {
     cursor: pointer;
   }
   .logo {
-    width: 100px;
+    width: 80px;
   }
   /* Header Section End */
   /* Home Page Start */
@@ -355,7 +482,7 @@ nav .fas {
   }
 
   .home-text {
-    margin-top: 70%;
+    margin-top: 80%;
     font-size: 16px;
   }
   .home-text h1 {
@@ -382,6 +509,12 @@ nav .fas {
     margin-right: 20px;
   }
   /* About Page End */
+  /* Contact Page Start */
+  .contact-right,
+  .contact-left {
+    flex-basis: 100%;
+  }
+  /* Contact Page End */
   /* Footer Section Start */
   .footer {
     font-size: 14px;
