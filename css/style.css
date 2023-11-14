@@ -12,9 +12,9 @@
   --subBg1: #ff004f;
   --subBg2: #ababab;
   --txt: #ffffff;
-  --txt1: #ffa500;
+  --span: #ffa500;
   --txt2: #b1ddf1;
-  --span: #fccb06;
+  --txt1: #fccb06;
   --msg: #61b752;
   --form: rgba(0, 0, 128, 0.623);
   --subBg: rgba(119, 0, 255, 0.411);
@@ -135,14 +135,15 @@ nav .fas {
 #home {
   width: 100%;
   height: 100vh;
-  background-image: url(../assets/images/bg_large.png);
+
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
 .home-text {
-  margin-top: 30%;
+  margin-top: 25%;
   font-size: 30px;
+  text-align: center;
 }
 .home-text h1 {
   font-size: 60px;
@@ -477,12 +478,10 @@ form .btn2 {
   }
   /* Header Section End */
   /* Home Page Start */
-  #home {
-    background-image: url(../assets/images/bg_mobile.png);
-  }
+
 
   .home-text {
-    margin-top: 90%;
+    margin-top: 50%;
     font-size: 16px;
   }
   .home-text h1 {
